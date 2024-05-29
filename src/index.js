@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
+
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Layout from './components/Layout';
@@ -18,12 +19,13 @@ import Dashboard from './pages/Dashboard';
 import UserProfile from './pages/UserProfile';
 import AuthorsPage from './pages/AuthorsPage';
 import CategoryPosts from './pages/CategoryPosts';
+import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
      path:"/",
      element:<Layout/>,
-     errorElement:<errorPge/>,
+     errorElement:<ErrorPage/>,
      children: [
      {index:true, element:<Home/>},
      {path:"/posts/:id ", element:<PostDetail/>},
