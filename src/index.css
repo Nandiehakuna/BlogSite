@@ -446,17 +446,89 @@ width: 84%;
     height: 5rem;
     display: grid;
     place-items: center;
-    background-color:var(255, 255, 255,0.5  );
+    background:var(255, 255, 255,0.5);
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    border-bottom: 4px solod var(--white-color1000);
-    backdrop-filter: blur(20px);
+     border-bottom: 4px solid var(--white-color95);
+     backdrop-filter: blur(20px);
     z-index: 1;
+}
+
+.nav_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+
+}
+
+.nav-btn{
+  display: none;
+
+}
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+}
+
+/* FOOTER STYLES */
+
+footer{
+  background-color: var(--sl-color-gray-900);
+  margin-top: 6rem;
+  padding-top:6rem ;
+
+ 
+}
+
+.footer-categories{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+
+  
+}
+
+.footer-categories a{
+  background-color: var(--sl-color-gray-700);
+  padding:0.6rem 1.4rem;
+  color: var(--white-color);
+  border-radius:var(--radius-2) ;
+  transition: var(--transition);
+
+
+}
+
+.footer-categories a:hover{
+  background-color: var(--white-color);
+  color: var(--sl-color-gray-800);
+
+
+}
+
+.footer-copyright{
+  text-align: center;
+  color: var(--white-color);
+  margin-top: 2em;
+  padding: 1rem;
+
+}
 
 
 
 
-  }
+
+
+
+
+ 
+
+
 

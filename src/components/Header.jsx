@@ -12,7 +12,7 @@ const Header = () => {
           <img src={Logo} alt="nav logo" className='nav-logo-img'  />
           </Link>
           
-           <ul>
+           <ul className='nav-menu'>
        <li><Link to="/Author">Authors </Link></li>
        <li><Link to="/profile">Kelly Gakii </Link></li>
        <li><Link to="/create">create profile </Link></li>
