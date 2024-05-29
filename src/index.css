@@ -356,6 +356,7 @@ body{
 
 h1, h2, h3, h4, h5{
   color: var(--sl-color-gray-950);
+  font-weight: 900;
 
 }
 
@@ -381,9 +382,16 @@ section{
 
 }
 
-.primary-btn{
-  background-color: var(--sl-color-primary-300);
+.btn-primary{
+  background-color: var(--sl-color-primary-500);
   color: var(--white-color1000);
+  padding: 1rem;
+  border-radius: var(--radius-2);
+}
+
+.btn-primary:hover{
+  color: var(--white-color);
+  background-color: var(--sl-color-gray-400);
 }
 
 .btn-category{
@@ -520,6 +528,28 @@ footer{
   padding: 1rem;
 
 }
+
+/* ERROR PAGE  */
+.center{
+  text-align: center;
+  padding-top: 5rem;
+  margin-inline: center; 
+  /* the same as margin auto center */
+  display: block;
+  width: 100%;
+}
+
+.center h2{
+  padding-top: 2rem;
+}
+
+
+
+
+
+
+
+ 
 
 
 
