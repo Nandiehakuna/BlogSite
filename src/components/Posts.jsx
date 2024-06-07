@@ -13,7 +13,7 @@ const  DUMMY_POSTS=[
         thumbnail:Thumbnail1,
         category:'education',
         title:'this is the title of the very first post on this page ',
-        desc:'lorem ispum dolar sit amot ',
+        desc:'Dive into a world where curiosity meets creativity. ThoughtsUnleashed is your go-to destination for diverse and engaging content, covering everything from lifestyle and travel to tech insights and personal growth. Our team of passionate writers and enthusiasts bring you thoughtful articles, inspiring stories, and practical tips to enrich your everyday life. Whether youre looking for a dose of daily inspiration, insightful advice, or just a good read, you ll find it all here. Join our community and explore the myriad of topics that ignite our passion and curiosity! ',
         authorID:3
 
     },
@@ -22,7 +22,7 @@ const  DUMMY_POSTS=[
         thumbnail:Thumbnail2,
         category:'education',
         title:'this is the title of the very first post on this page ',
-        desc:'lorem ispum dolar sit amot ',
+        desc:'Dive into a world where curiosity meets creativity. ThoughtsUnleashed is your go-to destination for diverse and engaging content, covering everything from lifestyle and travel to tech insights and personal growth. Our team of passionate writers and enthusiasts bring you thoughtful articles, inspiring stories, and practical tips to enrich your everyday life. Whether youre looking for a dose of daily inspiration, insightful advice, or just a good read, youll find it all here. Join our community and explore the myriad of topics that ignite our passion and curiosity! ',
         authorID:3
 
     }, {
@@ -30,7 +30,7 @@ const  DUMMY_POSTS=[
         thumbnail:Thumbnail3,
         category:'education',
         title:'this is the title of the very first post on this page ',
-        desc:'lorem ispum dolar sit amot ',
+        desc:'Dive into a world where curiosity meets creativity. ThoughtsUnleashed is your go-to destination for diverse and engaging content, covering everything from lifestyle and travel to tech insights and personal growth. Our team of passionate writers and enthusiasts bring you thoughtful articles, inspiring stories, and practical tips to enrich your everyday life. Whether youre looking for a dose of daily inspiration, insightful advice, or just a good read, youll find it all here. Join our community and explore the myriad of topics that ignite our passion and curiosity!',
         authorID:3
 
     }, {
@@ -38,7 +38,7 @@ const  DUMMY_POSTS=[
         thumbnail:Thumbnail4,
         category:'education',
         title:'this is the title of the very first post on this page ',
-        desc:'lorem ispum dolar sit amot ',
+        desc:'Dive into a world where curiosity meets creativity. ThoughtsUnleashed is your go-to destination for diverse and engaging content, covering everything from lifestyle and travel to tech insights and personal growth. Our team of passionate writers and enthusiasts bring you thoughtful articles, inspiring stories, and practical tips to enrich your everyday life. Whether youre looking for a dose of daily inspiration, insightful advice, or just a good read, youll find it all here. Join our community and explore the myriad of topics that ignite our passion and curiosity! ',
         authorID:3
 
     }, {
@@ -46,7 +46,7 @@ const  DUMMY_POSTS=[
         thumbnail:Thumbnail5,
         category:'education',
         title:'this is the title of the very first post on this page ',
-        desc:'lorem ispum dolar sit amot ',
+        desc:'Dive into a world where curiosity meets creativity. ThoughtsUnleashed is your go-to destination for diverse and engaging content, covering everything from lifestyle and travel to tech insights and personal growth. Our team of passionate writers and enthusiasts bring you thoughtful articles, inspiring stories, and practical tips to enrich your everyday life. Whether youre looking for a dose of daily inspiration, insightful advice, or just a good read, youll find it all here. Join our community and explore the myriad of topics that ignite our passion and curiosity!t ',
         authorID:3
 
     },
@@ -64,13 +64,17 @@ const Posts = () => {
     const [posts, setPosts]=useState(DUMMY_POSTS);
 
   return (
-    <div>
-        <section className="posts">
+    <section className='posts'>
+        
+        
+        <div className="posts-container ">
             {
-                posts.map((id,thumbnail, category, title, desc, authorID)=><PostItem key={id} PostID={id} thumbnail={thumbnail} category={category} title={title} description={desc} authorID={authorID}/>)
+                posts.map(({id,thumbnail, category, title, desc, authorID})=><PostItem key={id} PostID={id} thumbnail={thumbnail} category={category} title={title} description={desc} authorID={authorID}/>)
             }
-        </section>
-    </div>
+        </div>
+       
+        
+    </section>
   )
 }
 
