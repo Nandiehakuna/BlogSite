@@ -362,13 +362,18 @@ h1, h2, h3, h4, h5{
 }
 
 h1{
-  
-}
+    font-size: 15px;
+  }
 
 
 section{
   margin-top: 6rem;
 
+}
+
+p{
+  font-size: medium;
+  color: var(--sl-color-green-1050);
 }
 
 .btn{
@@ -612,6 +617,88 @@ footer{
     margin: 20px;
     border-radius: 40px;
 
+}
+
+
+
+.posts-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author{
+  display:flex ;
+  align-items: center;
+  gap: 0.2em;
+ 
+}
+
+.profile-avatar{
+  width: 30px;
+  border-radius: 10px;
+}
+
+.author-details{
+  display: flex;
+ flex-direction: column;
+ width: 100%;
+  
+}
+
+.category{
+  background-color: var(--light-green-50);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+/* POST DETAIL STYLES  */
+
+.postdetail{
+  margin-inline: auto;
+  height: fit-content;
+  width:600px ;
+  background-color: var(--white-color);
+  padding: 3em 2em;
+  overflow: hidden;
+  border-radius:20px ;
+
+}
+
+.postdetail-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.details-btn{
+  display: flex;
+  gap: 1em;
+ 
+}
+
+.details-btn a button{
+
+  padding: 10px;
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.edit{
+  background-color: var(--sl-color-green-1050);
+}
+
+.delete{
+  background-color: var(--meter-red);
+
+}
+
+.content img{
+  width: 100%;
+  /* margin: 0 20px; */
+  border-radius: 20px;
 }
 
 
