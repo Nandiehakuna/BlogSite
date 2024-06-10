@@ -393,15 +393,15 @@ p{
 }
 
 .btn-primary{
-  background-color: var(--sl-color-primary-500);
+  background-color: var(--sl-color-green-950);
   color: var(--white-color1000);
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: var(--radius-2);
 }
 
 .btn-primary:hover{
   color: var(--white-color);
-  background-color: var(--sl-color-gray-400);
+  /* background-color: var(--sl-color-gray-400); */
 }
 
 .btn-category{
@@ -700,6 +700,66 @@ footer{
   /* margin: 0 20px; */
   border-radius: 20px;
 }
+
+
+/* REGISTER PAGE STYLES  */
+
+.register{
+  width:100% ;
+
+  
+  
+
+}
+
+.register h2, .login h2{
+  text-align: center;
+  color: var(--sl-color-green-900);
+  text-transform: capitalize;
+}
+
+.register-container, .login-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 40%;
+  margin-inline: auto;
+  background-color: var(--white-color);
+  padding: 1.5em;
+  border-radius:20px;
+  height: fit-content;
+}
+
+.register-container h1, .login h1{
+  background-color: var(--sl-color-red-500);
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.register-container button, .login-container button{
+  width: 20%;
+  cursor: pointer;
+
+
+}
+
+
+input{
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  background-color:var(--light-green-50);
+
+}
+
+
+small{
+  text-align: center;
+  font-size: 15px;
+}
+
 
 
 
