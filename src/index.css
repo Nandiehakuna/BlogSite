@@ -594,7 +594,7 @@ footer{
   object-fit: cover;
 }
 
- .posts-container{
+ .posts-container, .authors-container, .category-container {
  display: flex;
  /* justify-content: space-between; */
 

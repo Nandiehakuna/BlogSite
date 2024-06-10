@@ -5,6 +5,7 @@ import Thumbnail4 from './Assets/blog4.jpg'
 import Thumbnail5 from './Assets/blog5.jpg'
 
 
+
 export const  DUMMY_POSTS=[
     {
         id:'1',
